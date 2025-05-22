@@ -45,15 +45,13 @@ export interface LLMConfig {
   modelProperties?: Record<string, any>;
 }
 
-export interface Neo4jConfig {
+export interface KuzuConfig {
   url: string;
-  username: string;
-  password: string;
 }
 
 export interface GraphStoreConfig {
   provider: string;
-  config: Neo4jConfig;
+  config: KuzuConfig;
   llm?: LLMConfig;
   customPrompt?: string;
 }
